@@ -2,13 +2,13 @@ const profileLinks = [
   {
     name: "DUDSHOP777 SHOP",
     description: "เข้าสู่เว็บไซต์ร้านค้า",
-    url: "https://dudshop777.web2u.xyz/home",
+    url: "https://dudshop777.xyz/",
     tag: "OFFICIAL SHOP",
   },
   {
     name: "DISCORD",
     description: "พูดคุยและติดตามข่าวสาร",
-    url: "https://discord.com/",
+    url: "https://discord.gg/cguw9H3kv9",
     tag: "COMMUNITY",
   },
   {
@@ -20,7 +20,7 @@ const profileLinks = [
   {
     name: "INSTAGRAM",
     description: "ติดตามผ่าน Instagram",
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/thanwaa.53/",
     tag: "SOCIAL",
   },
 ];
