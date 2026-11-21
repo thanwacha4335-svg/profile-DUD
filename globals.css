@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap');
+
+:root{--bg:#080808;--panel:#111;--red:#ef233c;--red2:#a90820;--text:#f5f5f5;--muted:#969696;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Kanit',sans-serif}
+a{color:inherit;text-decoration:none}
+.site-shell{position:relative;max-width:1240px;margin:auto;padding:0 42px;overflow:hidden}
+.background-glow{position:absolute;pointer-events:none;border-radius:50%;filter:blur(110px);opacity:.18;z-index:-1}
+.glow-one{width:360px;height:360px;background:#e0002b;top:130px;right:-190px}
+.glow-two{width:280px;height:280px;background:#8b0018;top:760px;left:-190px}
+.topbar{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Orbitron',sans-serif;font-size:15px;font-weight:800;letter-spacing:1px}
+.brand-mark{width:37px;height:37px;display:grid;place-items:center;background:var(--red);color:#fff;border-radius:10px;font-family:'Orbitron',sans-serif;font-size:14px;box-shadow:0 0 24px #ef233c55}
+.red-text{color:var(--red)}
+.online,.active-text{color:#70df9b;font-family:'Orbitron',sans-serif;font-size:10px;letter-spacing:1.3px}
+.online i,.card-bottom i{display:inline-block;width:7px;height:7px;background:#70df9b;border-radius:50%;margin-right:8px;box-shadow:0 0 10px #70df9b}
+.hero{min-height:570px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:70px;padding:70px 0 80px}
+.eyebrow{font-family:'Orbitron',sans-serif;font-size:10px;letter-spacing:2px;color:#aaa;display:flex;align-items:center;gap:10px}
+.eyebrow span{display:inline-block;width:24px;height:2px;background:var(--red)}
+.hero h1{font-family:'Orbitron','Kanit',sans-serif;font-size:clamp(38px,6vw,70px);line-height:1.12;letter-spacing:-2px;margin:24px 0 20px;font-weight:800}
+.hero h1 span{color:var(--red);text-shadow:0 0 34px #ef233c33}
+.hero-description{max-width:520px;color:#aaa;line-height:1.9;font-size:15px}
+.hero-actions{display:flex;gap:13px;margin-top:30px;flex-wrap:wrap}
+.button{padding:12px 20px;border-radius:7px;font-size:13px;font-weight:600;transition:.2s}
+.button-primary{background:var(--red);color:white;box-shadow:0 8px 25px #ef233c2c}
+.button-primary:hover{background:#ff4057;transform:translateY(-2px)}
+.button-primary span{margin-left:14px}
+.button-ghost{border:1px solid #444;color:#ddd}
+.button-ghost:hover{border-color:var(--red);color:white}
+.hero-meta{display:flex;gap:12px;align-items:center;margin-top:48px;color:#777;font:9px 'Orbitron',sans-serif;letter-spacing:1.2px;flex-wrap:wrap}
+.hero-meta b{color:var(--red)}
+.hero-card{justify-self:center;width:min(100%,330px);padding:24px;border:1px solid #353535;border-radius:15px;background:linear-gradient(145deg,#181818,#0d0d0d);box-shadow:0 25px 80px #0009;position:relative}
+.hero-card:before{content:'';position:absolute;inset:-1px;border-radius:15px;padding:1px;background:linear-gradient(135deg,#ef233c88,transparent 45%,#ef233c22);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.card-top,.card-bottom{display:flex;justify-content:space-between;color:#777;font:9px 'Orbitron',sans-serif;letter-spacing:1.5px}
+.card-top span:last-child{color:var(--red)}
+.avatar{width:150px;height:150px;margin:38px auto 24px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#3a1018,#111 65%);border:1px solid #7e1c2b;box-shadow:0 0 45px #ef233c22,inset 0 0 30px #ef233c16;font:800 54px 'Orbitron',sans-serif}
+.avatar span{color:var(--red)}
+.hero-card h2{text-align:center;font:800 19px 'Orbitron',sans-serif;letter-spacing:1px;margin:0}
+.role{text-align:center;color:#777;font:9px 'Orbitron',sans-serif;letter-spacing:2px;margin:10px 0 25px}
+.card-line{height:1px;background:var(--line);margin-bottom:18px}
+.card-bottom strong{color:#70df9b;font-weight:500}
+.content-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+.panel{background:linear-gradient(145deg,#141414,#0e0e0e);border:1px solid var(--line);border-radius:12px;padding:27px}
+.section-label{display:flex;justify-content:space-between;gap:12px;font:9px 'Orbitron',sans-serif;letter-spacing:1.4px;color:var(--red)}
+.section-label b{color:#555;font-weight:500}
+.panel h2,.section-heading h2{font:700 27px 'Orbitron','Kanit',sans-serif;letter-spacing:1px;margin:22px 0 13px}
+.about-panel>p{color:#aaa;font-size:14px;line-height:1.9;max-width:570px}
+.about-note{display:flex;align-items:center;gap:12px;margin-top:25px;padding:13px;background:#ef233c0d;border:1px solid #ef233c25;border-radius:7px;color:#c9c9c9;font-size:12px}
+.note-icon{color:var(--red);font-size:18px}
+.info-row{display:flex;justify-content:space-between;gap:15px;padding:16px 0;border-bottom:1px solid var(--line);font-size:11px}
+.info-row:first-of-type{margin-top:10px}
+.info-row:last-child{border:0}
+.info-row span{color:#777;font:9px 'Orbitron',sans-serif;letter-spacing:1px}
+.info-row strong{font-size:11px;font-weight:500;text-align:right}
+.links-section{padding:92px 0 75px}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}
+.section-heading h2{font-size:34px;margin:15px 0 5px}
+.section-subtitle{color:#888;font-size:13px;margin:0}
+.links-count{color:#666;font:9px 'Orbitron',sans-serif;letter-spacing:1px;padding-bottom:8px}
+.links-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.link-card{display:block;padding:22px;border:1px solid #292929;background:linear-gradient(120deg,#151515,#0d0d0d);border-radius:10px;transition:.22s}
+.link-card:hover{transform:translateY(-4px);border-color:#a91c32;background:linear-gradient(120deg,#1c1114,#101010);box-shadow:0 15px 35px #0008}
+.link-card-top,.link-card-bottom{display:flex;justify-content:space-between;align-items:center}
+.link-number{font:10px 'Orbitron',sans-serif;color:var(--red)}
+.link-tag{font:8px 'Orbitron',sans-serif;color:#777;letter-spacing:1px;border:1px solid #333;border-radius:30px;padding:6px 9px}
+.link-card h3{font:600 14px 'Orbitron','Kanit',sans-serif;letter-spacing:.7px;margin:26px 0 5px}
+.link-card p{color:#888;font-size:11px;margin:0}
+.link-arrow{width:34px;height:34px;display:grid;place-items:center;border:1px solid #393939;border-radius:50%;color:var(--red);font-size:18px;transition:.2s}
+.link-card:hover .link-arrow{background:var(--red);color:white;border-color:var(--red)}
+.footer{border-top:1px solid var(--line);padding:24px 0 30px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer p,.back-top{font:8px 'Orbitron',sans-serif;letter-spacing:1px;color:#666}
+.back-top:hover{color:var(--red)}
+@media(max-width:760px){.site-shell{padding:0 20px}.topbar{height:72px}.hero{grid-template-columns:1fr;gap:45px;padding:65px 0}.hero-card{width:min(100%,320px)}.hero-meta{margin-top:35px}.content-grid{grid-template-columns:1fr}.links-section{padding:70px 0 55px}.section-heading{align-items:start;flex-direction:column}.links-count{padding:0}.footer{flex-wrap:wrap}.footer p{order:3;width:100%}}
+@media(max-width:480px){.online{font-size:8px}.hero h1{font-size:39px}.links-grid{grid-template-columns:1fr}.panel{padding:21px}.info-row{font-size:10px}.footer .brand{font-size:12px}}
